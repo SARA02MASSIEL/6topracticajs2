@@ -5,18 +5,23 @@ function calcularlasagna() {
     const capas = document.getElementById("layers");
     const layer = capas.value;
 
-    const horno = 40 - tiempo
-
-    if (horno < 0) {
-        horno = 0
+    if (horno < 0 || layer < 1) {
+        alert("Valores invalidos")
     }
+    else{
+        const horno = 40 - time
 
-    const prep = 2 * layer
+        if (horno < 0) {
+            horno = 0
+        }
 
-    const total = horno + prep
+        const prep = 2 * layer
 
-    console.log(name + age)
-    alert("Tiempo restante en el horno: " + horno)
-    alert("Tiempo total de preparación: " + prep)
-    alert("Tiempo total de trabajo: " + total)
+        const total = horno + prep
+
+        console.log("holaaa")
+        alert("Tiempo restante en el horno: " + horno)
+        alert("Tiempo total de preparación: " + prep)
+        alert("Tiempo total de trabajo: " + total)
+    }
 }
